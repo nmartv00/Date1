@@ -1,0 +1,137 @@
+public class Date{
+  int day;
+  int month;
+  int year;
+  
+  //Constructor principal de la clase Date
+  public Date (int day, int month, int year){
+    this.day = day;
+    this.month = month;
+    this.year;
+  }
+  
+  //Get y Set
+  void setYear (int year){
+    this.year = year();
+  }
+  
+  void setDay (int day){
+    this.day = day();
+  }
+  
+  void setMonth (int month){
+    this.month = month();
+  }
+  
+  int getYear(){
+    return this.year;
+  }
+  
+  int getDay (int day){
+    return this.day;
+  }
+  
+  int getMonth (int month){
+    return this.month;
+  }
+  
+  //Metodos que verifican si la fecha es la actual
+  Boolean isSameYear (Date other){
+    if (this.year == other.getYear()){
+      return true;
+    } else{
+      return false;
+    }
+  }
+  
+  Boolean isSameMonth (Date other){
+    if (this.month == other.getMonth()){
+      return true;
+    } else{
+      return false;
+    }
+  }
+  
+  Boolean isSameDay (Date other){
+    if (this.day == other.getDay()){
+      return true;
+    } else{
+      return false;
+    }
+  }  
+  
+  Boolean isSame (Date other){
+    if (this.day == other.getDay() && this.month == other.getMonth() && this.year == other.getYear()){
+      return true;
+    } else{
+      return false;
+    }
+  }
+  
+  String getMonthName(){
+    String mes = "";
+    switch (this.month){
+      case1: mes = "Enero";
+        break;
+      case2: mes = "Febrero";
+        break;
+      case3: mes = "Marzo";
+        break;
+      case4: mes = "Abril";
+        break;
+      case5: mes = "Mayo";
+        break;
+      case6: mes = "Junio";
+        break;
+      case7: mes = "Julio";
+       break;
+      case8: mes = "Agosto";
+        break;
+      case9: mes = "Septiembre";
+        break;
+      case10: mes = "Octubre";
+        break;
+      case11: mes = "Noviembre";
+        break;
+      case12: mes = "Diciembre";
+        break;
+      }
+      
+      return mes;
+    }
+  }
+  
+  String getSeasonName(){
+    String estacion = "";
+    switch (this.month){
+      case1: estacion = "Invierno";
+        break;
+      case2: estacion = "Invierno";
+        break;
+      case3: estacion = "Primavera";
+        break;
+      case4: estacion = "Primavera";
+        break;
+      case5: estacion = "Primavera";
+        break;
+      case6: estacion = "Verano";
+        break;
+      case7: estacion = "Verano";
+       break;
+      case8: estacion = "Verano";
+        break;
+      case9: estacion = "Otoño";
+        break;
+      case10: estacion = "Otoño";
+        break;
+      case11: estacion = "Otoño";
+        break;
+      case12: estacion = "Invierno";
+        break;
+      }
+      
+      return estacion;
+    }
+  }
+  
+  
